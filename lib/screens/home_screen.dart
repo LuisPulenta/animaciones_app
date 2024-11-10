@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animaciones_app/screens/animaciones1_screen.dart';
 import 'package:animaciones_app/screens/animaciones2_screen.dart';
+import 'package:animaciones_app/screens/animaciones3_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -37,6 +38,20 @@ class HomeScreen extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) => const Animaciones2Screen(),
+              ),
+            );
+          },
+        ),
+        const SizedBox(
+          height: 20,
+        ),
+        _Boton(
+          texto: "Animaciones 3",
+          function: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Animaciones3Screen(),
               ),
             );
           },

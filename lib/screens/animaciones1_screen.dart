@@ -79,11 +79,11 @@ class _CuadradoAnimadoState extends State<CuadradoAnimado>
       } else if (controller.status == AnimationStatus.dismissed) {
         controller.forward();
       }
-      ;
     });
     super.initState();
   }
 
+  //------------------------- dispose -----------------------------
   @override
   void dispose() {
     controller.dispose();

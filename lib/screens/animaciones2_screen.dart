@@ -48,17 +48,14 @@ class _CuadradoAnimadoState extends State<CuadradoAnimado>
     moverDerecha = Tween(begin: 0.0, end: 100.0).animate(CurvedAnimation(
         parent: controller,
         curve: const Interval(0, 0.25, curve: Curves.bounceOut)));
-    super.initState();
 
     moverArriba = Tween(begin: 0.0, end: -100.0).animate(CurvedAnimation(
         parent: controller,
         curve: const Interval(0.25, 0.5, curve: Curves.bounceOut)));
-    super.initState();
 
     moverIzquierda = Tween(begin: 0.0, end: -100.0).animate(CurvedAnimation(
         parent: controller,
         curve: const Interval(0.5, 0.75, curve: Curves.bounceOut)));
-    super.initState();
 
     moverAbajo = Tween(begin: 0.0, end: 100.0).animate(CurvedAnimation(
         parent: controller,
